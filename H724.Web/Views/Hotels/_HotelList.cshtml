@@ -1,0 +1,11 @@
+﻿@model H724.Web.com.ean.api.HotelList
+           
+<table>
+    @foreach (var hotel in Model.HotelSummary)
+    {
+        <tr>
+            <td>@hotel.name</td>
+            <td><img src="@hotel.thumbNailUrl" alt="@hotel.name" /></td>
+        </tr>
+    }
+</table>
